@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditPage">
+
+
+    <TextView
+        android:id="@+id/titleE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#424141"
+        android:gravity="center"
+        android:padding="18dp"
+        android:text="EDIT CATEGORY"
+        android:textColor="#ffffff"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/nametitleE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleE"
+        android:layout_marginTop="25dp"
+        android:text=" Name"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nameE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nametitleE"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#BABABA"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/typetitleE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameE"
+        android:layout_marginTop="25dp"
+        android:text=" Type"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radiogroupE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/typetitleE"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vegetarian"
+            android:id="@+id/vegetarianE"
+            android:textSize="14dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non-vegetarian"
+            android:id="@+id/nonvegetarianE"
+            android:textSize="14dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eggatarian"
+            android:id="@+id/eggatarianE"
+            android:textSize="14dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vegan"
+            android:id="@+id/veganE"
+            android:textSize="14dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/descriptiontitleE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroupE"
+        android:layout_marginTop="25dp"
+        android:text=" Description"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/descriptionE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descriptiontitleE"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#BABABA"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/qtytitleE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descriptionE"
+        android:layout_marginTop="25dp"
+        android:text=" Minimum Qty"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/qtyE"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qtytitleE"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#BABABA"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/qtyE">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_margin="70dp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textSize="25dp"
+            android:fontFamily="monospace"
+            android:background="@drawable/submit"
+            android:gravity="center"
+            android:id="@+id/submitE"/>
+    </LinearLayout>
+
+</RelativeLayout>
